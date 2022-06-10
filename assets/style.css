@@ -31,18 +31,18 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height:100vh;
+    height: 100vh;
 }
 
 .output{
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
     align-items: flex-end;
     word-wrap: break-word;
     word-break: break-word;
     width: 269px;
-    height: 100px;
-    padding: 8px 7px 0;
+    padding: 15px 7px 0;
     border-radius: 18px 18px 0px 0px;
     box-shadow: 7px 7px 20px rgba(255, 255, 255, 0.25);
     background-image: linear-gradient(143deg, #fafafae8 0%, #fbfbfb33 100%);
@@ -51,15 +51,16 @@ body {
 }
 
 .output > .previous-operand {
-    margin: 6px 0 5px;
     color: var(---numbers-color);
     font-size: 1.2rem;
+    transition:  all 0.4s cubic-bezier(0.37, -0.19, 1, 1.28);
 }
 
 .output .current-operand {
     color: #000000;
     line-height: 47px;
-    font-size: 2rem;
+    font-size: 1.7rem;
+    transition:  all 0.4s cubic-bezier(0.37, -0.19, 1, 1.28);
 }
 
 table {
