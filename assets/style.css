@@ -1,0 +1,116 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    font-weight: 400;
+    font-style: normal;
+}
+
+:root {
+    ---content-items-backgroun: #F3F3F3;
+    ---content-items-hover: #70707094;
+
+    ---numbers-color:#707070;
+    ---background-botao-soma: #56CB95;
+    ---botao-soma: #FFFFFF;
+    ---hover-color: #FFFFFF;
+}
+
+body {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    background: linear-gradient( 50deg,  #96ecff80  4.03%,#39E394 90.10%);
+}
+
+.conteiner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+}
+
+.output{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    word-wrap: break-word;
+    word-break: break-word;
+    width: 269px;
+    height: 100px;
+    padding: 8px 7px 0;
+    border-radius: 18px 18px 0px 0px;
+    box-shadow: 7px 7px 20px rgba(255, 255, 255, 0.25);
+    background-image: linear-gradient(143deg, #fafafae8 0%, #fbfbfb33 100%);
+    border: 1px solid #FFFFFF;
+    border-bottom: none;
+}
+
+.output > .previous-operand {
+    margin: 6px 0 5px;
+    color: var(---numbers-color);
+    font-size: 1.2rem;
+}
+
+.output .current-operand {
+    color: #000000;
+    line-height: 47px;
+    font-size: 2rem;
+}
+
+table {
+    width: 269px;
+    height: 357px;
+    padding: 10px;
+    border-radius: 0 0 18px 18px;
+    border: 1px solid #FFFFFF;
+    border-top: none;
+    background: linear-gradient(144deg, #fafafae8 0%, #fbfbfb33 100%);
+    box-shadow: 7px 7px 20px rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(50px);
+}
+
+.content-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3px;
+}
+
+.btn {
+    width: 100%;
+    height: 57px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background-color: var(---content-items-backgroun);
+    color: var(---numbers-color);
+    border-radius: 13px;
+}
+
+.btn:hover{
+    color: var(---hover-color);
+    background-color: var(---content-items-hover);
+}
+
+td {
+    width: 60px;
+    height: 50px;
+}
+
+.sinal-de-igual {
+    color: var(---botao-soma);
+    transition: all 0.3s ease;
+    background-color: var(---background-botao-soma); 
+    font-size: 24px;
+    cursor:pointer;
+    height: 120px;
+} 
+
+.sinal-igual:hover {
+    background-color: var(---numbers-hover-backgroun);
+}
