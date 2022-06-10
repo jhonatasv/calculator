@@ -8,7 +8,81 @@
 </head>
 <body>
     <main>
-        
+        <section class="conteiner">
+            <table>       
+                <div class="output">
+                    <div class="previous-operand" id="res-anterior"></div>       
+                    <div class="current-operand" id="res-atual"></div>
+                </div>
+                <tbody>
+                    <tr>
+                        <td>
+                            <div class="content-items caracteres"><button class="btn" onclick="clear()">CE</button></div>
+                        </td>
+                        <td>
+                            <div class="content-items"><button class="btn" onclick="delet()">></button></div>
+                        </td>
+                        <td>
+                            <div class="content-items"><button class="btn">/</button></div>
+                        </td>
+                        <td>
+                            <div class="content-items"><button class="btn">*</button></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> 
+                            <div class="content-items"><button class="btn">7</button></div>
+                        </td>
+                        <td>
+                            <div class="content-items"><button class="btn">8</button></div>
+                        </td>
+                        <td>
+                            <div class="content-items"><button class="btn">9</button></div>
+                        </td>
+                        <td>
+                            <div class="content-items"><button class="btn">-</button></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="content-items"><button class="btn">4</button></div>
+                        </td>
+                        <td>
+                            <div class="content-items"><button class="btn">5</button></div>
+                        </td>
+                        <td>
+                            <div class="content-items"><button class="btn">6</button></div>
+                        </td>
+                        <td>
+                            <div class="content-items"><button class="btn" onclick="soma()">+</button></div>
+                        </td>
+            
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="content-items"><button class="btn" id="number" >1</button></div>
+                        </td>
+                        <td>
+                            <div class="content-items"><button class="btn" id="number">2</button></div>
+                        </td>
+                        <td>
+                            <div class="content-items"><button class="btn" id="number">3</button></div>
+                        </td>
+                        <td rowspan="3">
+                            <div class="content-items"><button class="btn sinal-de-igual" onclick="resultado()">=</button></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <div class="content-items"><button class="btn" id="number" onclick="insert('0')">0</button></div>
+                        </td>
+                        <td>
+                            <div class="content-items"><button class="btn">.</button></div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
     </main>
 </body>
 </html>
